@@ -12,27 +12,25 @@
 */
 
 Route::get('/', function () {
-    $works = DB::table('works')->get();
+  $works = DB::table('works')->get();
 
-    return view('home_grid', ['works' => $works]);
+  return view('home', ['works' => $works]);
 });
 
-Route::get('/works', function () {
-    return view('works');
-});
 
-Route::get('/tools', function () {
-    return view('tools');
-});
+//WorksController
+Route::get('/works', 'WorkController@index');
+Route::get('/work/{id}', 'WorkController@show');
 
-Route::get('/lab', function () {
-    return view('lab');
-});
 
-Route::get('/posts', function () {
-    return view('posts');
-});
+//ToolsController
+Route::get('/tools', 'ToolController@index');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+
+Route::get('/labs', 'LabController@index');
+
+
+Route::get('/posts', 'PostController@index');
+
+
+Route::get('/contact', 'ContactController@show');

@@ -11,12 +11,10 @@
     </head>
 
     <body>
-      <div class="container__nav">
+      <div class="container">
         {{-- Navigation Section --}}
         @include('layouts.partials.nav')
-      </div>
 
-      <div class="container">
         {{-- Content Section --}}
         @yield('content')
 

@@ -1,10 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light mx-2 my-4">
-  {{-- Logotype --}}
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light my-5 py-3">
   <a class="navbar-brand" href="/">
-    <img class="img-fluid" src="/images/pma_logo-menu.png">
+    <img class="img-fluid" src="/images/assets/pma_logo-menu.png">
   </a>
 
-  {{-- NavBar --}}
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,8 +21,8 @@
         <a class="nav-link nav-hover" href="/tools">Tools</a>
       </li>
 
-      <li class="nav-item {{Request::is('lab') ? 'active' : ''}}">
-        <a class="nav-link nav-hover" href="/lab">Lab</a>
+      <li class="nav-item {{Request::is('labs') ? 'active' : ''}}">
+        <a class="nav-link nav-hover" href="/labs">Labs</a>
       </li>
 
       <li class="nav-item {{Request::is('posts') ? 'active' : ''}}">

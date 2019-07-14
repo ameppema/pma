@@ -29,9 +29,9 @@
 }
 
 @media (min-width: 768px) {
-  .navbar {
-    padding: 0.5rem 2.5rem;
-  }
+  // .navbar {
+  //   padding: 0.5rem 2.5rem;
+  // }
 
   .navbar-nav {
     flex-direction: row;
@@ -41,9 +41,9 @@
 }
 
 @media (min-width: 1200px) {
-  .navbar {
-    padding: 0.5rem 10rem;
-  }
+  // .navbar {
+  //   padding: 0.5rem 10rem;
+  // }
 
   .navbar-nav {
     margin-top: 0;

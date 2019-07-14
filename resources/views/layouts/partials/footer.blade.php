@@ -1,6 +1,6 @@
-<footer>
+<footer class="footer mt-auto py-3">
   <div class="container text-center">
-    <p class="copyright mb-1"><b>{{config('app.name')}}</b> todos los derechos reservados.</p>
+    <p class="copyright mb-1"><b>{{config('app.name')}} ®</b> todos los derechos reservados.</p>
 
     <ul class="footer-nav text-center my-4">
       <li class="footer-item {{Request::is('/') ? 'active' : ''}}">
@@ -15,8 +15,8 @@
         <a class="nav-link nav-hover" href="/tools">Tools</a>
       </li>
 
-      <li class="footer-item {{Request::is('lab') ? 'active' : ''}}">
-        <a class="nav-link nav-hover" href="/lab">Lab</a>
+      <li class="footer-item {{Request::is('labs') ? 'active' : ''}}">
+        <a class="nav-link nav-hover" href="/labs">Labs</a>
       </li>
 
       <li class="footer-item {{Request::is('posts') ? 'active' : ''}}">
